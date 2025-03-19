@@ -1,141 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nipun Website</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-  <div class="header">
-     <nav>
-        <img src="images/nipunflix logo 3.png" class="logo">
-        <div>
-            <button class="language-btn">English<img src="images/down-icon.png"></button>
-            <button class="signin-btn">Sign In</button>
-        </div>
-     </nav>
-     <div class="header-content">
-       <h1>Unlimited Anime, Movies and more.</h1>
-       <h3>Watch Anywhere. Cancel anytime.</h3>
-       <p>Ready to Wacth? Enter your email to create your membership.</p>
-       <form class="email-signup">
-        <input type="email" placeholder="Email-address" required>
-        <button type="Submit">Get Started</button>
-       </form>
-     </div>
-  </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stream unlimited anime, movies, and TV shows on NipunFlix. Watch anywhere, anytime.">
+    <title>NipunFlix - Watch Anytime, Anywhere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/nipunflix_logo.png" class="logo" alt="NipunFlix Logo">
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </header>
 
-  <div class="features">
-    <div class="row">
-        <div class="text-col">
-            <h2>Enjoy on any platform.</h2>
-            <p>Watch on smart TVs, PlayStation, Xbox, Mobile Phone, Apple TV, and more.</p>
-      </div>
-      <div class="img-col">
-        <img src="images/feature 6 (1).jpg">
-      </div>
-    </div>
-    <div class="row">
-        <div class="img-col">
-            <img src="images/feature 2 (1).jpg">
-          </div>
-        <div class="text-col">
-            <h2>Download your shows to watch offline</h2>
-            <p>Save your favourites easily and always have something to watch.</p>
-      </div>
-      
-    </div>
-    <div class="row">
-        <div class="text-col">
-            <h2>Watch everywhere</h2>
-            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-      </div>
-      <div class="img-col">
-        <img src="images/feature 4 (1).jpg">
-      </div>
-    </div>
-    <div class="row">
-        <div class="img-col">
-            <img src="images/feature 5 (1).jpg">
-          </div>
-        <div class="text-col">
-            <h2>Create different profiles</h2>
-            <p>Send yourself on adventures with your favourite characters in a space made just for you.</p>
-      </div>
-      
-    </div>
-  </div>
-  <div class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <ul class="accordion">
-        <li>
-            <input type="radio" name="accordion" id="first">
-            <label for="first">What is Nipunflix?</label>
-            <div class="content">
-                <p>Nipunflix is a streaming service that offers a wide variety of award-winning Animes, movies, TV Shows , documentaries and more – on thousands of internet-connected devices.
-                 You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new Anime and movies are added every week!</p>
-                </div>
-        </li>
-        <li>
-                 <input type="radio" name="accordion" id="second">
-                 <label for="second">How much does NipunFlix Cost?</label>
-                 <div class="content">
-                 <p>Watch Nipunflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</p>
-                </div>         
-         </li>
-         <li>    <input type="radio" name="accordion" id="third">
-                <label for="third">Where can i watch?</label>
-                <div class="content">
-                <p>Watch anywhere, anytime. Sign in with your Nipunflix account to watch instantly on the web at NipunFlix.com from your personal computer or on any internet-connected device that offers the Nipunflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
-                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Nipunflix with you anywhere.</p>
-                </div>
-        </li>
-        <li>
-                <input type="radio" name="accordion" id="fourth">
-                <label for="fourth">How do I cancel?</label>
-                <div class="content">
-                <p>NipunFlix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
-                </div>
-        </li>
-    </ul>
-    <small>Ready to Wacth? Enter your email to create your membership.</small>
-    <form class="email-signup">
-        <input type="email" placeholder="Email-address" required>
-        <button type="Submit">Get Started</button>
-       </form>
-</div>
+    <section class="hero">
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" placeholder="Email address" required>
+        <button class="signup">Get Started</button>
+    </section>
 
-<div class="footer">
-    <h2>Questioms? call 77175-40035</h2>
+    <section class="features">
+        <img src="images/feature1.jpg" loading="lazy" alt="Feature Image">
+        <p>Enjoy on your TV, tablet, and more.</p>
+    </section>
 
-    <div class="row">
-        <div class="col">
-            <a href="#">FAQ</a>
-            <a href="#">Investor Relation</a>
-            <a href="#">Privacy</a>
-            <a href="#">Speed Test</a>
-        </div>
-        <div class="col">
-            <a href="#">Help Center</a>
-            <a href="#">Jobs</a>
-            <a href="#">Cookies</a>
-            <a href="#">Legal Notices</a>
-        </div>
-        <div class="col">
-            <a href="#">Account</a>
-            <a href="#">Ways to Watch</a>
-            <a href="#">Corporate Info</a>
-            <a href="#">Only on NipunFlix</a>
-        </div>
-        <div class="col">
-            <a href="#">Media Centre</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Contact us</a>
-        </div>
-    </div>
-    <button class="language-btn">English<img src="images/down-icon.png"></button>
-<p class="copyright">NipunFlix India</p>
-</div>
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <ul class="accordion">
+            <li>
+                <label>What is NipunFlix? <span>+</span></label>
+                <div class="content">NipunFlix is a streaming service...</div>
+            </li>
+            <li>
+                <label>How much does it cost? <span>+</span></label>
+                <div class="content">Plans start at $9.99 per month...</div>
+            </li>
+        </ul>
+    </section>
 
+    <footer>
+        <p>Questions? Call 1-800-NIPUNFLIX</p>
+    </footer>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
