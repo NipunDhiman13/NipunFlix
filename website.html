@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NipunFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <nav>
+            <img src="images/nipunflix logo 3.png" class="logo">
+            <div>
+                <select id="language-select" class="language-btn">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+                <button class="signin-btn">Sign In</button>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1 data-lang-key="title">Unlimited Anime, Movies and more.</h1>
+            <h3 data-lang-key="subtitle">Watch Anywhere. Cancel anytime.</h3>
+            <p data-lang-key="cta-text">Ready to watch? Enter your email to create your membership.</p>
+            <form class="email-signup">
+                <input type="email" placeholder="Email-address" required>
+                <button type="submit" data-lang-key="get-started">Get Started</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2 data-lang-key="feature1-title">Enjoy on any platform.</h2>
+                <p data-lang-key="feature1-desc">Watch on smart TVs, PlayStation, Xbox, Mobile Phone, Apple TV, and more.</p>
+            </div>
+            <div class="img-col">
+                <img src="images/feature 6.jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="images/feature 2 (1).jpg">
+            </div>
+            <div class="text-col">
+                <h2 data-lang-key="feature2-title">Download your shows to watch offline</h2>
+                <p data-lang-key="feature2-desc">Save your favourites easily and always have something to watch.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-col">
+                <h2 data-lang-key="feature3-title">Watch everywhere</h2>
+                <p data-lang-key="feature3-desc">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="img-col">
+                <img src="images/feature 4 (1).jpg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="images/feature 5 (1).jpg">
+            </div>
+            <div class="text-col">
+                <h2 data-lang-key="feature4-title">Create different profiles</h2>
+                <p data-lang-key="feature4-desc">Send yourself on adventures with your favourite characters in a space made just for you.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+        <h2 data-lang-key="faq-title">Frequently Asked Questions</h2>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first" data-lang-key="faq1-q">What is Nipunflix?</label>
+                <div class="content">
+                    <p data-lang-key="faq1-a">Nipunflix is a streaming service that offers a wide variety of anime, movies, TV shows, and more on multiple devices. Watch anytime, anywhere, without ads.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second" data-lang-key="faq2-q">How much does NipunFlix cost?</label>
+                <div class="content">
+                    <p data-lang-key="faq2-a">Nipunflix offers plans ranging from ₹149 to ₹649 per month. No extra costs, no contracts.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third" data-lang-key="faq3-q">Where can I watch?</label>
+                <div class="content">
+                    <p data-lang-key="faq3-a">Watch anywhere on any internet-connected device, or download shows to watch offline on iOS, Android, or Windows.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fourth">
+                <label for="fourth" data-lang-key="faq4-q">How do I cancel?</label>
+                <div class="content">
+                    <p data-lang-key="faq4-a">Nipunflix is flexible. Cancel anytime online in just two clicks, with no cancellation fees.</p>
+                </div>
+            </li>
+        </ul>
+        <small data-lang-key="faq-cta">Ready to watch? Enter your email to create your membership.</small>
+        <form class="email-signup">
+            <input type="email" placeholder="Email-address" required>
+            <button type="submit" data-lang-key="get-started">Get Started</button>
+        </form>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="registerModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeRegisterModal()">&times;</span>
+            <h2 data-lang-key="register-title">Sign Up</h2>
+            <form id="registerForm">
+                <input type="email" id="regEmail" placeholder="Email" required>
+                <input type="text" id="regUsername" placeholder="Username" required>
+                <input type="password" id="regPassword" placeholder="Password" required minlength="8">
+                <button type="submit" data-lang-key="register-submit">Register</button>
+            </form>
+            <div id="registerMessage"></div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <h2 data-lang-key="contact">Questions? Call 77175-40035</h2>
+        <div class="row">
+            <div class="col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div class="col">
+                <a href="#">Help Center</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookies</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="col">
+                <a href="#">Account</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Info</a>
+                <a href="#">Only on NipunFlix</a>
+            </div>
+            <div class="col">
+                <a href="#">Media Center</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <p class="copyright">NipunFlix India</p>
+    </div>
+
+    <script>
+        const translations = {
+            en: {
+                title: "Unlimited Anime, Movies and more.",
+                subtitle: "Watch Anywhere. Cancel anytime.",
+                "cta-text": "Ready to watch? Enter your email to create your membership.",
+                "get-started": "Get Started",
+                "feature1-title": "Enjoy on any platform.",
+                "feature1-desc": "Watch on smart TVs, PlayStation, Xbox, Mobile Phone, Apple TV, and more.",
+                "feature2-title": "Download your shows to watch offline",
+                "feature2-desc": "Save your favourites easily and always have something to watch.",
+                "feature3-title": "Watch everywhere",
+                "feature3-desc": "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.",
+                "feature4-title": "Create different profiles",
+                "feature4-desc": "Send yourself on adventures with your favourite characters in a space made just for you.",
+                "faq-title": "Frequently Asked Questions",
+                "faq1-q": "What is Nipunflix?",
+                "faq1-a": "Nipunflix is a streaming service that offers a wide variety of anime, movies, TV shows, and more on multiple devices. Watch anytime, anywhere, without ads.",
+                "faq2-q": "How much does NipunFlix cost?",
+                "faq2-a": "Nipunflix offers plans ranging from ₹149 to ₹649 per month. No extra costs, no contracts.",
+                "faq3-q": "Where can I watch?",
+                "faq3-a": "Watch anywhere on any internet-connected device, or download shows to watch offline on iOS, Android, or Windows.",
+                "faq4-q": "How do I cancel?",
+                "faq4-a": "Nipunflix is flexible. Cancel anytime online in just two clicks, with no cancellation fees.",
+                "faq-cta": "Ready to watch? Enter your email to create your membership.",
+                "register-title": "Sign Up",
+                "register-submit": "Register",
+                "contact": "Questions? Call 77175-40035"
+            },
+            es: {
+                title: "Anime, películas y más sin límites.",
+                subtitle: "Mira en cualquier lugar. Cancela cuando quieras.",
+                "cta-text": "¿Listo para ver? Ingresa tu correo electrónico para crear tu membresía.",
+                "get-started": "Empezar",
+                "feature1-title": "Disfruta en cualquier plataforma.",
+                "feature1-desc": "Mira en Smart TVs, PlayStation, Xbox, móviles y más.",
+                "feature2-title": "Descarga tus programas para verlos sin conexión",
+                "feature2-desc": "Guarda tus favoritos fácilmente y siempre tendrás algo para ver.",
+                "feature3-title": "Mira en todas partes",
+                "feature3-desc": "Transmite películas y programas ilimitados en tu teléfono, tableta, computadora portátil y TV.",
+                "feature4-title": "Crea diferentes perfiles",
+                "feature4-desc": "Vive aventuras con tus personajes favoritos en un espacio hecho solo para ti.",
+                "faq-title": "Preguntas Frecuentes",
+                "faq1-q": "¿Qué es Nipunflix?",
+                "faq1-a": "Nipunflix es un servicio de streaming que ofrece una amplia variedad de anime, películas, programas de TV y más en múltiples dispositivos. Mira en cualquier momento y lugar, sin anuncios.",
+                "faq2-q": "¿Cuánto cuesta NipunFlix?",
+                "faq2-a": "Nipunflix ofrece planes que van desde ₹149 hasta ₹649 por mes. Sin costos adicionales, sin contratos.",
+                "faq3-q": "¿Dónde puedo mirar?",
+                "faq3-a": "Mira en cualquier dispositivo conectado a Internet o descarga programas para verlos sin conexión en iOS, Android o Windows.",
+                "faq4-q": "¿Cómo cancelo?",
+                "faq4-a": "Nipunflix es flexible. Cancela en cualquier momento en línea en solo dos clics, sin tarifas de cancelación.",
+                "faq-cta": "¿Listo para ver? Ingresa tu correo electrónico para crear tu membresía.",
+                "register-title": "Regístrate",
+                "register-submit": "Registrarse",
+                "contact": "¿Preguntas? Llama al 77175-40035"
+            }
+        };
+
+        document.getElementById("language-select").addEventListener("change", function () {
+            const lang = this.value;
+            document.querySelectorAll("[data-lang-key]").forEach(el => {
+                el.textContent = translations[lang][el.dataset.langKey];
+            });
+        });
+
+        // Registration Modal Logic
+        document.querySelectorAll('.email-signup').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                document.getElementById('registerModal').style.display = 'flex';
+                const email = form.querySelector('input[type="email"]')?.value;
+                if (email) document.getElementById('regEmail').value = email;
+            });
+        });
+
+        function closeRegisterModal() {
+            document.getElementById('registerModal').style.display = 'none';
+            document.getElementById('registerMessage').textContent = '';
+        }
+
+        document.getElementById('registerForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = document.getElementById('regEmail').value;
+            const username = document.getElementById('regUsername').value;
+            const password = document.getElementById('regPassword').value;
+            const messageDiv = document.getElementById('registerMessage');
+
+            try {
+                const res = await fetch('http://localhost:5000/api/v1/auth/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, username, password })
+                });
+                const data = await res.json();
+                messageDiv.style.color = res.ok ? 'green' : 'red';
+                messageDiv.textContent = data.message || (res.ok ? 'Registration successful!' : 'Registration failed');
+                if (res.ok) {
+                    setTimeout(closeRegisterModal, 2000);
+                }
+            } catch (err) {
+                messageDiv.style.color = 'red';
+                messageDiv.textContent = 'Network error. Please try again.';
+            }
+        });
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('registerModal');
+            if (event.target === modal) closeRegisterModal();
+        }
+    </script>
+</body>
+</html>
