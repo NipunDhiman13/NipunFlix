@@ -82,6 +82,12 @@ text
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
+## Screenshots
+
+![Logo](images/nipunflix1.png)
+![FAQ UI](images/nipunflix2.png)
+![Registration](images/nipunflix3.png)
+
 
 ## Contact
 
