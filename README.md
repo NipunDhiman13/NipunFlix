@@ -78,25 +78,14 @@ text
 - `GET /api/v1/users/me` - Get current user profile
 - ...and more!
 
-See the [API documentation](#) for full details.
-
-## Screenshots
-
-![Home Page](screenshots/home.png)
-![Registration Modal](screenshots/register.png)
-
 ## Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-
-[MIT](LICENSE)
 
 ## Contact
 
 - [Nipun Dhiman](https://github.com/NipunDhiman13)
-- Email: [your-email@example.com](mailto:your-email@example.com)
 
 ---
 
